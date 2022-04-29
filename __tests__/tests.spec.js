@@ -83,9 +83,9 @@ describe("Operaciones aritméticas en JavaScript", () => {
 
     test("Módulo: Investiga qué es el operador módulo (%) en JavaScript para resolver este test", () => {
         // Escribe aquí tu código
-        let q=3;
-        let r=15;
-        let s=13;
+        let q=15;
+        let r=3;
+        let s=4;
 
         expect(q % r).toEqual(0);
         expect(s % r).toEqual(1);
@@ -114,14 +114,21 @@ describe("Comparaciones en JavaScript", () => {
 describe("Álgebra booleana", () => {
     test("Usando el operador AND (&&)", () => {
         // Escribe aquí tu código
+        let a= true;
+        let b = true;
+        
         
         const expression = a && b;
     
         expect(expression).toEqual(true);
     })
 
-    test("Usando el operador OR (||)", () => {
+    test("Usando el operador OR (||)", () => { //true true es true y false false es false
         // Escribe aquí tu código
+        let c= false;
+        let d= false;
+
+
 
         const expression = c || d;
 
@@ -135,6 +142,9 @@ describe("Álgebra booleana", () => {
 describe("Operaciones con JavaScript", () => {
     test("Completa las variables que faltan para pasar los tests, ¡toca darle al coco!", () => {
         // Escribe aquí tu código
+        let a = 6;
+        let b = 5;
+        let c = 2;
 
         expect(a+b).toEqual(11);
         expect(b+c).toEqual(7);
@@ -143,13 +153,20 @@ describe("Operaciones con JavaScript", () => {
 
     test("Completa las variables que faltan para pasar los tests", () => {
         // Escribe aquí tu código
-
+        let d= 11;
+        let e= 2;
+        let f= 20;
         expect(d*e).toEqual(22);
         expect(e*f).toEqual(40);
     })
 
     test("Completa las variables que faltan para pasar los tests", () => {
         // Escribe aquí tu código
+        let a=10;
+        let b=100;
+        let c=undefined;
+        let d="Hello";
+        let e= "Expres";
 
         expect(a > 9).toBe(true);
         expect(a < 11).toBe(true);
