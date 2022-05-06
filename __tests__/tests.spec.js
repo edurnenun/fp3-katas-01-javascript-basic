@@ -51,7 +51,7 @@ describe("Operaciones aritméticas en JavaScript", () => {
         // Escribe aquí tu código
         let i = 40;
         let j = 60;
-        i+j;
+        //i+j;
 
         expect(i+j).toEqual(100);
     })
@@ -60,7 +60,7 @@ describe("Operaciones aritméticas en JavaScript", () => {
         // Escribe aquí tu código
         let k = 20;
         let l = 10;
-        k-l;
+        //k-l;
 
         expect(k-l).toEqual(10);
     })
@@ -69,7 +69,7 @@ describe("Operaciones aritméticas en JavaScript", () => {
         // Escribe aquí tu código
         let m=3;
         let n=2;
-        m*n;
+        //m*n;
         expect(m*n).toEqual(6);
     })
 
@@ -77,7 +77,7 @@ describe("Operaciones aritméticas en JavaScript", () => {
         // Escribe aquí tu código
         let o = 6;
         let p = 2;
-        o/p;
+        //o/p;
         expect(o/p).toEqual(3);
     })
 
@@ -99,15 +99,15 @@ describe("Comparaciones en JavaScript", () => {
     test("Usando el comparador de igualdad ===", () => {
         const number = 20;
         // Escribe aquí tu código
-        let expression = number === 5;
+        let expression = number === 5;//let expression = false y nos dan la const = 20 entonces let expression = number compara expression con number
         expect(expression).toEqual(false);
     })
 
     test("Usando el comparador de diferencia !==", () => {
         const language = "JavaScript";
         // Escribe aquí tu código
-        let expression = language !== "JavaScript";
-        expect(expression).toEqual(false);
+        let expression = language !== "JavaScript";// te dan const language y comparas language con expression y te de false
+        expect(expression).toEqual(false);// expression es false
     })
 })
 
@@ -120,7 +120,7 @@ describe("Álgebra booleana", () => {
         
         const expression = a && b;
     
-        expect(expression).toEqual(true);
+        expect(expression).toEqual(true);// true y true= true; true y false =false; false y false = false;
     })
 
     test("Usando el operador OR (||)", () => { //true true es true y false false es false
@@ -130,7 +130,7 @@ describe("Álgebra booleana", () => {
 
 
 
-        const expression = c || d;
+        const expression = c || d;// los dos tienen que ser false si una es false y la otra es true entonces una de ellas es true y por tanto es true ya que una d ellas es true=> true o false por tanto true 
 
         expect(expression).toEqual(false);
     })
@@ -171,7 +171,7 @@ describe("Operaciones con JavaScript", () => {
         expect(a > 9).toBe(true);
         expect(a < 11).toBe(true);
         expect(b === 100).toBe(true);
-        expect(c !== undefined).toBe(false);
+        expect(c !== undefined).toBe(false);//undefined es diferente a undefined pero eso es mentira
         expect(d !== "Hello").toBe(false);
         expect(e.startsWith("E")).toBe(true);
     })
